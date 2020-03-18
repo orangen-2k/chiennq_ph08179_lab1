@@ -1,4 +1,76 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+
+<h2>{{title}}</h2>
+  <div class="container">
+    <div class="row">
+      <div class="col-8 offset-2 border">
+        <div class="row">
+         <div class="col-6 offset-3">
+           <table>
+             <tr>
+               <td>Tên bệnh viện</td>
+               <td><input type="text" [value]="data.tenbv" (keyup)="data.tenbv = $event.target.value" class="form-control"></td>
+             </tr>
+             <tr>
+               <td>Ảnh bênh viện</td>
+               <td><input type="text" [value]="data.anhbv" (keyup)="data.tenbv = $event.target.value" class="form-control"></td>
+             </tr>
+             <tr>
+               <td>Tên gián đốc</td>
+               <td><input type="text" [value]="data.tengd" (keyup)="data.tenbv = $event.target.value" class="form-control"></td>
+             </tr>
+             <tr>
+               <td>Địa chỉ</td>
+               <td><input type="text" [value]="data.diachi" (keyup)="data.tenbv = $event.target.value" class="form-control"></td>
+             </tr>
+             <tr>
+               <td>Số ca nhiễm</td>
+               <td><input type="text" [value]="data.socanhiem" (keyup)="data.tenbv = $event.target.value" class="form-control"></td>
+             </tr>
+             <tr>
+               <td>Số ca chữa khỏi</td>
+               <td><input type="text" [value]="data.socachua" (keyup)="data.tenbv = $event.target.value" class="form-control"></td>
+             </tr>
+             <tr>
+               <td>Số ca tử vong</td>
+               <td><input type="text" [value]="data.socatu" (keyup)="data.tenbv = $event.target.value" class="form-control"></td>
+             </tr>
+           </table><br>
+                    <img width="150" height="100" [src]="data.anhbv" class="img-fluid">
+<br>
+            <div class="text-center">
+                <button id="btck" (click)="themtt()" class="btn btn-sm btn-success">Thêm</button>
+                &nbsp;
+                <button id="btck" (click)="themtt()" class="btn btn-sm btn-success">Sửa</button>
+            </div>
+        </div>
+    </div>
+</div>
+      <table border="1" align="center">
+        <tr>
+          <th width="30">ID</th>
+          <th width="150">Tên bênh viện</th>
+          <th width="150">Ảnh bệnh viện</th>
+          <th width="150">Tên giám đốc</th>
+          <th width="150">Địa chỉ</th>
+          <th width="130">Số ca nhiễm</th>
+          <th width="130">Số ca chữa khỏi</th>
+          <th width="130">Số ca tử vong</th>
+          <th width="120">Action</th>
+        </tr>
+        <tr *ngFor="let chuyen of databv">
+          <td>{{chuyen.id}}</td>
+          <td>{{chuyen.tenbv}}</td>
+          <td><img width="150" height="100" [src]="chuyen.anhbv"/></td>
+          <td>{{chuyen.tengd}}</td>
+          <td>{{chuyen.diachi}}</td>
+          <td>{{chuyen.socanhiem}}</td>
+          <td>{{chuyen.socachua}}</td>
+          <td>{{chuyen.socatu}}</td>
+          <td>
+            <input (click)="chuy(chuyen)" class="btn btn-sm btn-danger" type="button" value="Edit"/>&nbsp;
+            <input (click)="xoatt(chuyen)" class="btn btn-sm btn-danger" type="button" value="Xóa"/>
+          </td>
+         </tr>
+      </table>
+  </div>
+</div>
