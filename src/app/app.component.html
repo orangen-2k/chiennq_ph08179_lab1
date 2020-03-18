@@ -12,27 +12,27 @@
              </tr>
              <tr>
                <td>Ảnh bênh viện</td>
-               <td><input type="text" [value]="data.anhbv" (keyup)="data.tenbv = $event.target.value" class="form-control"></td>
+               <td><input type="text" [value]="data.anhbv" (keyup)="data.anhbv = $event.target.value" class="form-control"></td>
              </tr>
              <tr>
                <td>Tên gián đốc</td>
-               <td><input type="text" [value]="data.tengd" (keyup)="data.tenbv = $event.target.value" class="form-control"></td>
+               <td><input type="text" [value]="data.tengd" (keyup)="data.tengd = $event.target.value" class="form-control"></td>
              </tr>
              <tr>
                <td>Địa chỉ</td>
-               <td><input type="text" [value]="data.diachi" (keyup)="data.tenbv = $event.target.value" class="form-control"></td>
+               <td><input type="text" [value]="data.diachi" (keyup)="data.tediachinbv = $event.target.value" class="form-control"></td>
              </tr>
              <tr>
                <td>Số ca nhiễm</td>
-               <td><input type="text" [value]="data.socanhiem" (keyup)="data.tenbv = $event.target.value" class="form-control"></td>
+               <td><input type="text" [value]="data.socanhiem" (keyup)="data.socanhiem = $event.target.value" class="form-control"></td>
              </tr>
              <tr>
                <td>Số ca chữa khỏi</td>
-               <td><input type="text" [value]="data.socachua" (keyup)="data.tenbv = $event.target.value" class="form-control"></td>
+               <td><input type="text" [value]="data.socachua" (keyup)="data.socachua = $event.target.value" class="form-control"></td>
              </tr>
              <tr>
                <td>Số ca tử vong</td>
-               <td><input type="text" [value]="data.socatu" (keyup)="data.tenbv = $event.target.value" class="form-control"></td>
+               <td><input type="text" [value]="data.socatu" (keyup)="data.socatu = $event.target.value" class="form-control"></td>
              </tr>
            </table><br>
                     <img width="150" height="100" [src]="data.anhbv" class="img-fluid">
