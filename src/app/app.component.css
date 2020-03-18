@@ -7,3 +7,6 @@ table, td, th {
 	font-weight: bold;
 	font-size: 13PX;
 }
+body{
+  background-image: linear-gradient(120deg, #6666CC, #CC6699);
+}

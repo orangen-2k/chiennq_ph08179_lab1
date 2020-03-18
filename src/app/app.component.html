@@ -1,10 +1,11 @@
-
-<h2>{{title}}</h2>
+<body>
   <div class="container">
     <div class="row">
       <div class="col-8 offset-2 border">
+        <h2>{{title}}</h2>
         <div class="row">
          <div class="col-6 offset-3">
+              <img width="150" height="100" [src]="data.anhbv" class="img-fluid"/>
            <table>
              <tr>
                <td>Tên bệnh viện</td>
@@ -20,7 +21,7 @@
              </tr>
              <tr>
                <td>Địa chỉ</td>
-               <td><input type="text" [value]="data.diachi" (keyup)="data.tediachinbv = $event.target.value" class="form-control"></td>
+               <td><input type="text" [value]="data.diachi" (keyup)="data.diachi = $event.target.value" class="form-control"></td>
              </tr>
              <tr>
                <td>Số ca nhiễm</td>
@@ -35,12 +36,12 @@
                <td><input type="text" [value]="data.socatu" (keyup)="data.socatu = $event.target.value" class="form-control"></td>
              </tr>
            </table><br>
-                    <img width="150" height="100" [src]="data.anhbv" class="img-fluid">
-<br>
             <div class="text-center">
                 <button id="btck" (click)="themtt()" class="btn btn-sm btn-success">Thêm</button>
                 &nbsp;
                 <button id="btck" (click)="themtt()" class="btn btn-sm btn-success">Sửa</button>
+                &nbsp;
+                <button id="btck" (click)="cancel()" class="btn btn-sm btn-success">Làm mới</button>
             </div>
         </div>
     </div>
@@ -74,3 +75,4 @@
       </table>
   </div>
 </div>
+</body>
