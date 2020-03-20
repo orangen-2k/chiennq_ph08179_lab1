@@ -1,0 +1,17 @@
+
+      <table border="1" align="center">
+        <tr>
+          <td>{{herodata.id}}</td>
+          <td>{{herodata.tenbv}}</td>
+          <td><img width="150" height="100" [src]="herodata.anhbv"/></td>
+          <td>{{herodata.tengd}}</td>
+          <td>{{herodata.diachi}}</td>
+          <td>{{herodata.socanhiem}}</td>
+          <td>{{herodata.socachua}}</td>
+          <td>{{herodata.socatu}}</td>
+          <td>
+            <input (click)="EditEventFire()" class="btn btn-sm btn-danger" type="button" value="Edit"/>&nbsp;
+            <input  (click)="removeEventFire()"  class="btn btn-sm btn-danger" type="button" value="Xóa"/>
+          </td>
+         </tr>
+      </table>

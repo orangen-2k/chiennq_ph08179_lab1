@@ -89,14 +89,14 @@ export class AppComponent implements OnInit  {
     }
   }
 
-  xoatt(tt){
+  xoatt(chuyen){
     this.databv = this.databv.filter(function(item){
-      return item != tt;
+      return item != chuyen;
     });
   }
 
-  chuy(tt){
-    this.data = tt;
+  chuy(chuyen){
+    this.data = chuyen;
   }
-
+  
 }

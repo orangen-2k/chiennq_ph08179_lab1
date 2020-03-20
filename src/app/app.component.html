@@ -37,11 +37,7 @@
              </tr>
            </table><br>
             <div class="text-center">
-                <button id="btck" (click)="themtt()" class="btn btn-sm btn-success">Thêm</button>
-                &nbsp;
-                <button id="btck" (click)="themtt()" class="btn btn-sm btn-success">Sửa</button>
-                &nbsp;
-                <button id="btck" (click)="cancel()" class="btn btn-sm btn-success">Làm mới</button>
+              <app-con2 (onRemoveEvent)="xoatt($event)" (onEdit)="chuy($event)" ></app-con2>
             </div>
         </div>
     </div>
@@ -58,21 +54,8 @@
           <th width="130">Số ca tử vong</th>
           <th width="120">Action</th>
         </tr>
-        <tr *ngFor="let chuyen of databv">
-          <td>{{chuyen.id}}</td>
-          <td>{{chuyen.tenbv}}</td>
-          <td><img width="150" height="100" [src]="chuyen.anhbv"/></td>
-          <td>{{chuyen.tengd}}</td>
-          <td>{{chuyen.diachi}}</td>
-          <td>{{chuyen.socanhiem}}</td>
-          <td>{{chuyen.socachua}}</td>
-          <td>{{chuyen.socatu}}</td>
-          <td>
-            <input (click)="chuy(chuyen)" class="btn btn-sm btn-danger" type="button" value="Edit"/>&nbsp;
-            <input (click)="xoatt(chuyen)" class="btn btn-sm btn-danger" type="button" value="Xóa"/>
-          </td>
-         </tr>
       </table>
+      <app-con1 *ngFor="let chuyen of databv" [herodata]="chuyen" (onRemoveEvent)="xoatt($event)" (onEdit)="chuy($event)"></app-con1>
   </div>
 </div>
 </body>
