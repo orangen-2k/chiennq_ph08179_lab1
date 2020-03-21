@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Benhvien} from './Benhvien';
 @Component({
   selector: 'my-app',
   templateUrl: './app.component.html',
