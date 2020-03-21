@@ -11,9 +11,10 @@ export class Con1Component implements OnInit {
 
 @Output() onRemoveEvent = new EventEmitter();
 @Output() onEdit = new EventEmitter();
+
 removeEventFire(){
     this.onRemoveEvent.emit(this.herodata);
-  }
+  } 
   EditEventFire(){
     this.onEdit.emit(this.herodata);
   }

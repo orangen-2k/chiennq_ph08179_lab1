@@ -1,5 +1,6 @@
 import { Benhvien} from './Benhvien';
-export const data : Benhvien[] = [
+
+export const databenhvien : Benhvien[] = [
   {
     id: 1,
     tenbv: "FPT Polytechnic",

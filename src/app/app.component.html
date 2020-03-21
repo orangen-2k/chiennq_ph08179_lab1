@@ -37,7 +37,7 @@
              </tr>
            </table><br>
             <div class="text-center">
-              <app-con2 (onRemoveEvent)="xoatt($event)" (onEdit)="chuy($event)" ></app-con2>
+              <app-con2 (onAdd)="themtt($event)" (onClear)="cancel($event)" ></app-con2>
             </div>
         </div>
     </div>
@@ -56,6 +56,6 @@
         </tr>
       </table>
       <app-con1 *ngFor="let chuyen of databv" [herodata]="chuyen" (onRemoveEvent)="xoatt($event)" (onEdit)="chuy($event)"></app-con1>
-  </div>
+  </div> 
 </div>
 </body>
