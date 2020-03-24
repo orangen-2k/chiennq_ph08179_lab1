@@ -1,80 +1,71 @@
 body{
-  width: 100%;
-  height: 100%;
+  width: 2000px;
 }
 .header{
   width: 100%;
-	margin: 0 auto;
-  height: 200px;
+  height: 209px;
   background: white;
 }
 .menu{
   width: 100%;
-	margin: 0 auto;
   height: 50px;
-  background: brown;
+  background: #33FF33;
 }
 .menu ul{
-    margin: 0px;
-    padding: 0px;
-    margin-left: 550px;
+  
+  margin: 0px;
+  padding: 0px;
+  margin-left: 730px;
 
 }
 .menu ul li{
-    display: inline-block;
-    list-style: none;
+  
+  display: inline-block;
+  list-style: none;
     
-    line-height: 36px;
+  line-height: 51px;
 }
 .menu ul li a{
-    text-decoration: none;
-    color: white;
-    display: block;
-    font-weight: bold;
-    padding: 0px 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 13px;
+  text-decoration: none;
+  color: white;
+  display: block;
+  font-weight: bold;
+  padding: 0px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
 }
 .menu ul li a:hover {
-background-color:gray;
+  background-color:gray;
 }
 .content{
-width: 100%;
+  width: 100%;
   height: 100%;
   background: white;
 }
 .footer{
-width: 100%;
+  width: 100%;
   height: 250px;
-  background: red;
+  clear: left;
+  margin: 0 auto;
+  background:  #C0C0C0;
 }
-
-.layuot2{
-	max-width: 1000px;
-	margin: 0 auto;
-	position: relative;
-	background-color:#007fff ;/*xanhduong*/
+.trangchu{
+  background-color: gray;
 }
-.layuot2 header 
-{
-	background: #ff7f00;
-	height: 0px;
-	padding-bottom: 10%;
+.footer img{
+  margin-left: 20px;
+  width: 400px;
+  height: 220px;
+  float: left;
+  margin-top: 15px;
 }
-.layuot2 article{
-	min-height: 400px;
-	width: 30%;
-	background-color: yellow;
-	float: left;
+.diachi{
+  float: left;
+  margin-left: 10px;
+  margin-top: 17px;
 }
-.layuot2 nav{
-	/* width: 800px; */
-	height: 40px;
-	padding-bottom: 5%;
-	background-color: #00ff00;
-}
-.layuot2 footer{
-	padding-bottom: 5%;
-	background-color: #00ff00;
-	clear: both;
+.diachi p{
+  margin: 8px 0px;
+  font-family: Arial,sans-serif;
+  font-size: 20px;
 }
