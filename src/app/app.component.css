@@ -2,8 +2,79 @@ body{
   width: 100%;
   height: 100%;
 }
-header{
+.header{
   width: 100%;
-  height: 100px;
+	margin: 0 auto;
+  height: 200px;
+  background: white;
+}
+.menu{
+  width: 100%;
+	margin: 0 auto;
+  height: 50px;
+  background: brown;
+}
+.menu ul{
+    margin: 0px;
+    padding: 0px;
+    margin-left: 550px;
+
+}
+.menu ul li{
+    display: inline-block;
+    list-style: none;
+    
+    line-height: 36px;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-weight: bold;
+    padding: 0px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+.menu ul li a:hover {
+background-color:gray;
+}
+.content{
+width: 100%;
+  height: 100%;
+  background: white;
+}
+.footer{
+width: 100%;
+  height: 250px;
   background: red;
+}
+
+.layuot2{
+	max-width: 1000px;
+	margin: 0 auto;
+	position: relative;
+	background-color:#007fff ;/*xanhduong*/
+}
+.layuot2 header 
+{
+	background: #ff7f00;
+	height: 0px;
+	padding-bottom: 10%;
+}
+.layuot2 article{
+	min-height: 400px;
+	width: 30%;
+	background-color: yellow;
+	float: left;
+}
+.layuot2 nav{
+	/* width: 800px; */
+	height: 40px;
+	padding-bottom: 5%;
+	background-color: #00ff00;
+}
+.layuot2 footer{
+	padding-bottom: 5%;
+	background-color: #00ff00;
+	clear: both;
 }

@@ -1,18 +1,18 @@
 <body>
-  <header>
-    <img src=""/>
-  </header>
-  <menu>
-
-  </menu>
-  <content>
-
-  </content>
-  <footer>
-    
-  </footer>
-
-  <div class="container">
+  <div class="header">
+    <img src="https://www.manuinfosolutions.com/wp-content/uploads/2015/09/header-background.jpg"/>
+  </div>
+  <div class="menu">
+    <ul>
+        <li class="trangchu"><a href="#">Trang chủ</a></li>
+        <li><a href="gioithieu.html">Giới thiệu </a></li>
+        <li><a href="goiy.html">Gợi ý </a></li>
+        <li><a href="lh.html">Liên hệ</a></li>
+        <li><a href="tracuu.html">Tra cứu</a></li>
+       </ul>
+  </div><br>
+  <div class="content">
+     <div class="container">
     <div class="row">
       <div class="col-8 offset-2 border">
         <h2>{{title}}</h2>
@@ -57,5 +57,16 @@
 </div>
       <app-con1 *ngFor="let chuyen of databv" [herodata]="chuyen" (onRemoveEvent)="xoatt($event)" (onEdit)="chuy($event)"></app-con1>
   </div> 
-</div>
+</div><br>
+  </div>
+  <div class="footer">
+
+  </div>
+ <div class="layuot2">
+		<header></header>
+		<nav></nav>
+		<article></article>
+		<aside></aside>
+		<footer></footer>
+	</div>
 </body>
