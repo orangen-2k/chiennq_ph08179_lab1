@@ -1,10 +1,9 @@
 
 <body>
-  <div class="header">
-    <img width="500" src="https://1.bp.blogspot.com/-mi3ahxFXtNU/WlEZz96UQFI/AAAAAAAANAY/Vb8nqRrIqPIZyUSx4yETGQ2YJfFYR5cmwCLcBGAs/s1600/CE3Uoic.jpg"/> 
 
+  <div class="header">
+    <img width="500"  src="https://1.bp.blogspot.com/-mi3ahxFXtNU/WlEZz96UQFI/AAAAAAAANAY/Vb8nqRrIqPIZyUSx4yETGQ2YJfFYR5cmwCLcBGAs/s1600/CE3Uoic.jpg"/> 
     <input class="timkiem" type="text"  placeholder=" Tìm kiếm..."/>&nbsp;<button class="bttk">Tìm kiếm</button>
-    
   </div>
   <div class="menu">
     <ul>
@@ -13,13 +12,15 @@
         <li><a href="#">Gợi ý </a></li>
         <li><a href="#">Liên hệ</a></li>
        </ul>
-  </div><br>
-  <div class="content">
-     <div class="container">
+  </div>
+
+  <br>
+<div class="content">
+  <div class="container">
     <div class="row">
       <div class="col-8 offset-2 border">
-        <h2>{{title}}</h2>
         <div class="row">
+        <h2>{{title}}</h2>
          <div class="col-6 offset-3">
               <img width="150" height="100" [src]="data.anhbv" class="img-fluid"/>
            <table>
@@ -51,20 +52,23 @@
                <td>Số ca tử vong</td>
                <td><input type="text" [value]="data.socatu" (keyup)="data.socatu = $event.target.value" class="form-control"></td>
              </tr>
-           </table><br>
+           </table>
             <div class="text-center">
               <app-con2 (onAdd)="themtt($event)" (onClear)="cancel($event)" ></app-con2>
             </div>
+          </div>
         </div>
-    </div>
-</div>
-      <app-con1 *ngFor="let chuyen of databv" [herodata]="chuyen" (onRemoveEvent)="xoatt($event)" (onEdit)="chuy($event)"></app-con1>
+      </div>
   </div> 
-</div><br>
-  </div>
-<div class="footer">
+</div>
+</div>
+
+  <br>
+    <app-con1 *ngFor="let chuyen of databv" [herodata]="chuyen" (onRemoveEvent)="xoatt($event)" (onEdit)="chuy($event)"></app-con1>
+  <br>
+  <div class="footer">
     <div class="diachi">
         <p> <strong>Seacher</strong></p>
     </div> 
-</div>  
+  </div>  
 </body>
