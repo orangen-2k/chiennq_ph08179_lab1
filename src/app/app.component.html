@@ -7,23 +7,27 @@
   </div>
   <div class="menu">
     <ul>
-        <li class="trangchu"><a href="#">Trang chủ</a></li>
+        <li class="trangchu"><a href="Trangchu">Trang chủ</a></li>
         <li><a href="#">Thông tin</a></li>
         <li><a href="#">Gợi ý </a></li>
         <li><a href="#">Liên hệ</a></li>
        </ul>
   </div>
-
+  
   <br>
+  <div class="slg">
+        <h2>{{title}}</h2>
+  </div>
 <div class="content">
   <div class="container">
     <div class="row">
       <div class="col-8 offset-2 border">
         <div class="row">
-        <h2>{{title}}</h2>
          <div class="col-6 offset-3">
-              <img width="150" height="100" [src]="data.anhbv" class="img-fluid"/>
-           <table>
+           <div class="imga">
+             <img width="200"[src]="data.anhbv" class="img-fluid"/>
+             </div>
+            <table>
              <tr>
                <td>Tên bệnh viện</td>
                <td><input type="text" [value]="data.tenbv" (keyup)="data.tenbv = $event.target.value" class="form-control"></td>
