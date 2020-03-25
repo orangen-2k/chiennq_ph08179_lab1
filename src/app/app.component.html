@@ -53,9 +53,6 @@
                <td><input type="text" [value]="data.socatu" (keyup)="data.socatu = $event.target.value" class="form-control"></td>
              </tr>
            </table>
-            <div class="text-center">
-              <app-con2 (onAdd)="themtt($event)" (onClear)="cancel($event)" ></app-con2>
-            </div>
           </div>
         </div>
       </div>
@@ -63,6 +60,10 @@
 </div>
 </div>
 
+  <br>
+  <div class="text-center">
+    <app-con2 (onAdd)="themtt($event)" (onClear)="cancel($event)" ></app-con2>
+  </div>
   <br>
     <app-con1 *ngFor="let chuyen of databv" [herodata]="chuyen" (onRemoveEvent)="xoatt($event)" (onEdit)="chuy($event)"></app-con1>
   <br>
